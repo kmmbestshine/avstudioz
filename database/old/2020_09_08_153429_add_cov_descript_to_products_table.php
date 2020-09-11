@@ -14,7 +14,7 @@ class AddCovDescriptToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->longText('full_descript')->nullabble();
+            $table->text('cov_descript')->after('image');
         });
     }
 
